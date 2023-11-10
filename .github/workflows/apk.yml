@@ -30,8 +30,9 @@ jobs:
 #      - name: Run Unit Test
 #        run: ./gradlew testDebug
 #
-#      - name: Build with Gradle
-#        run: ./gradlew assembleDebug
+      # デバッグ APK をビルドする
+      - name: Build with Gradle
+        run: ./gradlew assembleDebug
 
       - name: Upload apk file
         uses: actions/upload-artifact@v3
